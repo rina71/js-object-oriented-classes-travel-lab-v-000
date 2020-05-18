@@ -33,10 +33,10 @@ class Route {
     return vertical + horizontal ;
   }
   estimatedTime(){
-    // if (arguments.length) {
-    //   return this.blocksTravelled() / 3
-    // } else {
+    if (arguments.length) {
+      return this.blocksTravelled() / 3
+    } else {
     return this.blocksTravelled() / 2
   }
-  // }
+  }
 }
