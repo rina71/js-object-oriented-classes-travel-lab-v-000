@@ -8,3 +8,14 @@ class Driver {
     return this.getFullYear() - date
   }
 }
+
+class Route {
+  constructor(beginningLocation, endingLocation){
+    this.beginningLocation = beginningLocation;
+    this.endingLocation = endingLocation;
+  }
+
+  blocksTravelled(){
+    return this.beginningLocation.vertical - this.endingLocation.vertical;
+  }
+}
