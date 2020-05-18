@@ -32,11 +32,11 @@ class Route {
    let horizontal = Math.abs(horizontalBeginning - horizontalEnding);
     return vertical + horizontal ;
   }
-  estimatedTime(){
-    if (arguments.length) {
-      return this.blocksTravelled() / 3
+  estimatedTime(peak){
+    if (peak === true) {
+      return this.blocksTravelled() / 2
     } else {
-    return this.blocksTravelled() / 2
+    return this.blocksTravelled() / 3
   }
   }
 }
